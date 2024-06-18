@@ -17,7 +17,7 @@ class LoopsEmail::Configuration
   end
 
   def stub
-    false
+    @stub || false
   end
   alias stub? stub
 end

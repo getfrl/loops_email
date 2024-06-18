@@ -17,7 +17,7 @@ Create initializer `config/initializers/loops_email.rb`:
 ```ruby
 LoopsEmail.configure do |config|
   config.api_key = "xxxxx" # if you're using rails, it's better to use built-in Credential
-  # config.stub = Rails.env.development? && ENV["LOOPS_EMAIL_ENABLE"]&.empty?
+  # config.stub = Rails.env.development? && !ENV["LOOPS_EMAIL_ENABLE"]
   # config.log_file_path = "log/loops_email.log"
 end
 ```
