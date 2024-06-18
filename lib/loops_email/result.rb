@@ -19,7 +19,7 @@ class LoopsEmail::Result
   end
 
   def operation_success?
-    body.dig(:body, :success)
+    body[:success]
   end
 
   def http_code
